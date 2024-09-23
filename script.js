@@ -1,4 +1,4 @@
-'use strict';
+s'use strict';
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -178,12 +178,15 @@ btnTransfer.addEventListener(`click`, function (e) {
     reciverAcc.movements.push(amount);
     updateUI(currentAccount);
   }
+  else{
+    alert('The balance is insufficient !');
+  }
   inputTransferTo.value = ``;
   inputTransferAmount.value = ``;
 });
 
 // Request a loan
-btnLoan,
+btnLoan.
   addEventListener(`click`, function (e) {
     e.preventDefault();
     const amount = Number(inputLoanAmount.value);
